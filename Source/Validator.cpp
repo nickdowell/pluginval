@@ -32,6 +32,9 @@ struct PluginsUnitTestRunner    : public juce::UnitTestRunner,
         jassert (callback);
         resetTimeout();
 
+        // Initialise the crash handler to clear any previous crash logs
+        initialiseCrashHandler();
+
         if (timeoutInMs > 0)
             startThread (juce::Thread::Priority::low);
     }
