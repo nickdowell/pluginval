@@ -54,7 +54,7 @@ jobs:
       - name: Setup Environment Variables
         shell: bash
         run: |
-          VERSION=$(cat VERSION)
+          VERSION=$(head -n1 VERSION)
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "APP_DIR=${{ env.BUILD_DIR }}/${{ env.BINARY_NAME }}_artefacts/${{ env.BUILD_TYPE }}" >> $GITHUB_ENV
           echo "ZIP_FILE_NAME=${{ env.BINARY_NAME }}_${{ matrix.name }}.zip" >> $GITHUB_ENV

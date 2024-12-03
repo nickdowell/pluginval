@@ -103,7 +103,7 @@ If you have a case you would like tests, please simply write the test in a fork 
 
 ### Cutting New Releases
 
-* Update VERSION (make sure there's not an extra newline)
+* Update VERSION (an extra newline is fine)
 * Update CHANGELIST.md
 * `git commit -am "Version 1.0.5"`
 * `git tag -a v1.0.5 -m "1.0.5 release"`
