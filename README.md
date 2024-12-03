@@ -101,6 +101,14 @@ If you would like to contribute to the project please do! It's very simple to ad
 
 If you have a case you would like tests, please simply write the test in a fork and create a pull request. The more tests the better!
 
+### Cutting New Releases
+
+* Update VERSION (make sure there's not an extra newline)
+* Update CHANGELIST.md
+* `git commit -am "Version 1.0.5"`
+* `git tag -a v1.0.5 -m "1.0.5 release"`
+* `git push --tags`
+
 License
 ----
 
